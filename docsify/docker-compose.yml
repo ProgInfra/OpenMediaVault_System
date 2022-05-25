@@ -1,0 +1,13 @@
+---
+version: '3.6'
+
+services:
+  openmediavault_system_docs:
+    container_name: openmediavault_system_docs
+    image: openmediavault-system-docs:latest
+    build:
+      context: ..
+      dockerfile: ./docsify/Dockerfile
+    ports:
+    - 6007:80
+    restart: unless-stopped

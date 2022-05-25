@@ -1,0 +1,15 @@
+pages:
+  script:
+  - mkdir .public
+  - cp -r ./docs .public/docs
+  - cp -r ./icon.png .public/icon.png
+  - cp -r ./CONTRIBUTING.md .public/CONTRIBUTING.md
+  - cp -r ./index.html .public/index.html
+  - cp -r ./LICENCE.md .public/LICENCE.md
+  - cp -r ./README.md .public/README.md
+  - mv .public public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master

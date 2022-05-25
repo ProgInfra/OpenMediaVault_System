@@ -1,0 +1,12 @@
+FROM node:16.13-bullseye-slim
+
+WORKDIR /app
+
+# Dependencies installation
+RUN npm install -g docsify-cli@latest
+
+# Expose Server Port
+EXPOSE 3000
+
+# Development launch command
+CMD [ "docsify", "serve", "." ]
