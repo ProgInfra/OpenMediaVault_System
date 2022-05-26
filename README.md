@@ -11,6 +11,8 @@
   - [Description](#description)
   - [Access](#access)
   - [Getting Started](#getting-started)
+    - [Server Access](#server-access)
+    - [Services Available](#services-available)
   - [Documentations](#documentations)
   - [Development](#development)
     - [Requirements](#requirements)
@@ -29,26 +31,57 @@ We will use **Debian** as main operating system, **Docker** as Container engine 
 ## Access
 
 - **Development (Local)** :
-  - [Server Build Docs Development](http://localhost:6007)
+  - [OpenMediaVault System Docs Development](http://localhost:6007)
 - **Production (Local)** :
-  - [Server Build Docs Production](http://localhost:6007)
+  - [OpenMediaVault System Docs Production](http://localhost:6007)
 - **Production** :
-  - [Server Build Docs Production](https://proginfra.gitlab.io/openmediavault_system)
+  - [OpenMediaVault System Docs Production](https://proginfra.gitlab.io/openmediavault_system)
 
 ## Getting Started
 
 1) First of all you need a **machine** to build this **storage server**, choose and build your server with this project : [Server Build](https://proginfra.gitlab.io/server_build/#/)
 2) With your machine, you can now install the **operating system** : **Debian**. Depend of your machine (**ARM** / **AMD**) you need to install the system with a **USB Boot Key**, see this [documentations](https://progdevlab.gitlab.io/dyntools/#/docs/global/boot) to create this Key.
-3) TODO Install OMV + OMV Extra + Docker + Portainer ?
-4) TODO Configure OMV
-5) TODO Setup ZFS Storage
-6) TODO Configure ACL Permission and Users
-7) TODO Configure SMB / NFS Share
-8) TODO What you can do now ? (Docker Container, Share, ...)
+3) [Install OpenMediaVault](./docs/install.md).
+4) [Configure OpenMediaVault](./docs/configure.md).
+5) Configure [Storage with ZFS](./docs/storage.md).
+6) Configure [Permissions with ACL and users](./docs/permissions.md).
+7) Configure [SMB and NFS Share](./docs/shares.md).
+8) [What you can do now ?](./docs/next.md).
+
+### Server Access
+
+- **SSH Access** : USER@192.168.X.X
+  - **Username** : USER
+  - **Password** : You have defined it !
+- [OpenMediaVault Web UI](http://192.168.X.X) : Same credentials as SSH !
+- [Portainer](http://192.168.X.X:9000) : Credentials you have defined !
+- [Yacht](http://192.168.X.X:8001) : Credentials you have defined !
+
+### Services Available
+
+- **System Services** :
+  - CURL and WGET
+  - HTOP and Glances
+  - VIM
+  - Screen
+  - NFS
+  - ZFS
+  - OpenMediaVault
+  - OpenMediaVault Extra
+  - Docker and Docker Compose
+- **Container** :
+  - Portainer
+  - Yacht
 
 ## Documentations
 
 - [Ideas](./docs/ideas.md)
+- [Install](./docs/install.md)
+- [Configure](./docs/configure.md)
+- [Storage](./docs/storage.md)
+- [Permissions](./docs/permissions.md)
+- [Share](./docs/shares.md)
+- [Next](./docs/next.md)
 
 ## Development
 
