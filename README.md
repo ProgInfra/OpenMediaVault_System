@@ -82,6 +82,7 @@ We will use **Debian** as main operating system, **Docker** as Container engine 
 - [Permissions](./docs/permissions.md)
 - [Share](./docs/shares.md)
 - [Next](./docs/next.md)
+- [Plugins](./docs/plugins.md)
 
 ## Development
 

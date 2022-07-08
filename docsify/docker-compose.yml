@@ -2,8 +2,8 @@
 version: '3.6'
 
 services:
-  openmediavault_system_docs:
-    container_name: openmediavault_system_docs
+  openmediavault-system-docs:
+    container_name: openmediavault-system-docs
     image: openmediavault-system-docs:latest
     build:
       context: ..
