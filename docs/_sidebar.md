@@ -3,7 +3,7 @@
 * [Configure](./docs/configure.md)
 * [Storage](./docs/storage.md)
 * [Permissions](./docs/permissions.md)
-* [Share](./docs/shares.md)
+* [Shares](./docs/shares.md)
 * [Next](./docs/next.md)
 * [Ideas](/docs/ideas.md)
 * [Contributing](/CONTRIBUTING.md)

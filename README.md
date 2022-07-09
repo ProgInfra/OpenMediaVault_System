@@ -24,9 +24,9 @@
 
 OpenMediaVault Installation and Configuration.
 
-This project contains all documentations to setup a complete OpenMediaVault (OMV) System to init a new storage server.
+This project contains all documentations to setup a complete **OpenMediaVault (OMV)** System to init a new storage server.
 
-We will use **Debian** as main operating system, **Docker** as Container engine and **ZFS** as storage filesystem.
+We will use **Debian** as main operating system, **Docker** as Container engine and **EXT4** as storage filesystem.
 
 ## Access
 
@@ -80,7 +80,7 @@ We will use **Debian** as main operating system, **Docker** as Container engine 
 - [Configure](./docs/configure.md)
 - [Storage](./docs/storage.md)
 - [Permissions](./docs/permissions.md)
-- [Share](./docs/shares.md)
+- [Shares](./docs/shares.md)
 - [Next](./docs/next.md)
 - [Plugins](./docs/plugins.md)
 
