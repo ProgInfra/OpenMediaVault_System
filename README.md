@@ -43,7 +43,7 @@ We will use **Debian** as main operating system, **Docker** as Container engine 
 2) With your machine, you can now install the **operating system** : **Debian**. Depend of your machine (**ARM** / **AMD**) you need to install the system with a **USB Boot Key**, see this [documentations](https://progdevlab.gitlab.io/dyntools/#/docs/global/boot) to create this Key.
 3) [Install OpenMediaVault](./docs/install.md).
 4) [Configure OpenMediaVault](./docs/configure.md).
-5) Configure [Storage with ZFS](./docs/storage.md).
+5) Configure [Storage](./docs/storage.md).
 6) Configure [Permissions with ACL and users](./docs/permissions.md).
 7) Configure [SMB and NFS Share](./docs/shares.md).
 8) [What you can do now ?](./docs/next.md).

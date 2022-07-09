@@ -6,38 +6,37 @@
 
 - [OpenMediaVault System : Storage](#openmediavault-system--storage)
   - [Table Of Contents](#table-of-contents)
-  - [Why ZFS](#why-zfs)
-  - [ZFS](#zfs)
+  - [RAID](#raid)
+  - [Storage](#storage)
   - [Next](#next)
 
-## Why ZFS
+## RAID
 
-With the ZFS filesystem we have a file system and a volume manager, all tools needed are available to setup some RAID, manage Permission and setup Backup.
+> RAID aren't an **obligation**, you can continue to setup your storage if you **don't want a RAID** !
 
-## ZFS
+If you **want**, you can setup some RAID with your disk, it's a **good practice** to have as minimum as a **mirror RAID level**, to do this, it's sample :
 
-First, you need the ZFS plugins, because OpenMediaVault don't have natively ZFS support :
+1) Go to **Storage/RAID Management**
+2) Click on add to create a **new RAID**.
+3) Select your **RAID level** depending of your **number of disk** and their **utility**.
+4) Select each **disk you want** to put in this **RAID**.
+5) Click on save and wait for your **RAID** to be **clean** and **sync**.
 
-1) Go to **System/Plugins**
-2) Search **zfs** and install the ZFS plugins.
-3) If you have an **error**, you have some step to setup : Connect to the **SSH console** to do some maintenance
+Now you have setup a RAID with the level you **want**, and you can continue to **setup your storage**.
 
-```bash
-sudo -s
+> **Be careful** : **RAID IS NOT A BACKUP**, with a **RAID** you have more **read** or **write** capacity with **high availability**, you can lost one disk but if data are **corrupted**, **both disk are corrupted** !
 
-# Remove OpenMediaVault ZFS Plugins
-apt-get remove --autoremove openmediavault-zfs
+## Storage
 
-# Upgrade the system
-apt-get update && apt-get full-upgrade
-apt-get install linux-image-amd64
-```
+Now you have some disk (in RAID configuration or none) and you can setup some file systems on these to put data on it and share their :
 
-Finally **reboot** and **return on the UI** to install the **ZFS plugins**.
-
-Now you can manage your ZFS pools with the UI, if you want, you can manage them in the console with this [documentation](https://progdevlab.gitlab.io/dyntools/#/docs/linux/zfs).
-
-You can also change the **frequency of scrub (check each pools)** your pools with the file **/etc/cron.d/zfsutils-linux**
+1) Go to **Storage/File Systems**
+2) Click on add to create a **new file systems** (you can also mount existing file system if your disk isn't empty !).
+3) Select the disk you want (or a RAID configuration).
+4) Select the type of file systems to format the disk (EXT4 is a good file systems for Linux).
+5) Click on save and wait for the file systems to be created.
+6) Now you can choice when the notification "Be careful, storage practically full !" will be send (85 % is a good warning threshold).
+7) Finally, click on yes to mount the file system.
 
 ## Next
 
