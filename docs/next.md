@@ -7,11 +7,10 @@
 - [OpenMediaVault System : Next](#openmediavault-system--next)
   - [Table Of Contents](#table-of-contents)
   - [What you can do now ?](#what-you-can-do-now-)
-  - [And now ?](#and-now-)
 
 ## What you can do now ?
 
-Now you have a good storage server, you can do whatever you want with this server :
+Now you have a good storage server, you can do whatever you want with this server and more :
 
 - Setup **Domotic system** (with Docker container).
 - Setup some **services** (with OpenMediaVault or Docker).
@@ -21,7 +20,5 @@ Now you have a good storage server, you can do whatever you want with this serve
 - Install a **VPN** to get access from anywhere (**WireGuard** VPN with Docker).
 - Add advanced **monitoring** and **alerting** system.
 - Add **Cloud sync**.
-
-## And now ?
 
 Now you can upgrade your server with all you want, setup new container services or some [plugins](./plugins.md).

@@ -1,4 +1,4 @@
-* [Home](/)
+* [OpenMediaVault System](/)
 * [Install](./docs/install.md)
 * [Configure](./docs/configure.md)
 * [Storage](./docs/storage.md)

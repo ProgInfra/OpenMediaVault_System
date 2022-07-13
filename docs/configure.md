@@ -58,4 +58,4 @@ There are also plenty of plugins to do what you want.
 
 ## Next
 
-You can [configure your storage with ZFS](./storage.md).
+You can [configure your storage](./storage.md).
